@@ -9,8 +9,10 @@ Install R: [Link](https://cran.r-project.org/)
 In R Interactive terminal, run:
 
 ```
-install.packages("remote")
+install.packages("remotes")
 ```
+
+Pick some mirror when asked for
 
 Then, install [GT3X R package](https://github.com/THLfi/read.gt3x) in R Interactive terminal:
 
