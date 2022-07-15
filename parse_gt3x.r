@@ -15,8 +15,10 @@ transformENMO <- function(data, sample_frequency, window) {
     ENMO <- sqrt(x^2 + y^2 + z^2) - 1
     ENMO[which(ENMO < 0)] <- 0
     ENMO2 <- cumsum(ENMO)
-    ENMO3 <- diff(ENMO2[seq(1, length(ENMO), by = (sample_frequency * window))]) / (sample_frequency * window)
 
+    write.csv(ENMO2, paste("output", "test2.csv", sep = "/"))
+
+    ENMO3 <- diff(ENMO2[seq(1, length(ENMO), by = (sample_frequency * window))]) / (sample_frequency * window)
     return(ENMO3)
 }
 

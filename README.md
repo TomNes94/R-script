@@ -14,7 +14,7 @@ install.packages("remotes")
 
 Pick some mirror when asked for
 
-Then, install [GT3X R package](https://github.com/THLfi/read.gt3x) in R Interactive terminal:
+ Then, install [GT3X R package](https://github.com/THLfi/read.gt3x) in R Interactive terminal:
 
 ```
 remotes::install_github("THLfi/read.gt3x")
